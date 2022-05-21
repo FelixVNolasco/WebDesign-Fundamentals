@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactividad y contenido embebido</title>
+</head>
+<body>
+    
+    <dialog id="modal">
+        <h2>Curso de HTML</h2>
+        <p> Precio:$800</p>
+        <p>Profesor: Felix Vega</p>
+        <button id="close">Cerrar</button>
+    </dialog>
+<button id="button">Abrir Modal</button>
+
+    <h1>Contenido Interactivo</h1>
+    <details >
+        <summary>HTML</summary>  
+        <p>Lenguaje de marcado de Hypertexto</p>
+        <p>Se creó en 1989</p>
+    </details>
+<script>
+const modal = document.getElementById("modal");
+const button = document.getElementById("button");
+const close = document.getElementById("close");
+   button.addEventListener("click",()=>
+   {
+       modal.setAttribute("open","true")
+   })
+   close.addEventListener("click",()=>
+   {
+    modal.removeAttribute("open")
+   })
+</script>
+
+<h1>Contenido embebido</h1>
+
+
+<iframe width="560" height="315" src=
+"https://www.youtube.com/embed/CKtR4GIxRYM" 
+frameborder="0" allow="accelerometer; autoplay;
+encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen></iframe>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30130.134707940375!2d-98.84731310000001!3d19.270758800000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce1f5f0afbc2d9%3A0xe26da4e1e3a4d0ff!2zMTnCsDE2JzQ3LjYiTiA5OMKwNTAnMTYuMSJX!5e0!3m2!1ses-419!2smx!4v1562549667148!5m2!1ses-419!2smx"
+width="600" height="450"
+frameborder="0" style="border:0" allowfullscreen></iframe>
+</body>
+</html>

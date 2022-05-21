@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+<form>
+
+        <fieldset>
+                <legend>
+                   Tus datos personales     
+                </legend>
+
+                 <div>
+                <label >
+                 Ingrese su Nombre
+                <input type="text"placeholder="nombre" required>
+                </label>
+               </div>
+
+             <div>
+            <label>Ingrese su numero de Teléfono
+            <input type="number" placeholder="Teléfono">
+            </label>
+           </div> 
+           
+           <div>
+                        <label>Fecha de nacimiento 
+                        <input type="date" placeholder="fecha de nacimiento" required>
+                        </label>
+                         </div>
+                                        
+                       <div>
+                        <label> Ingrese su numero de seguro social
+                         <input type="number" placeholder="Numerodesegurosocial" required>
+                          </label>
+                         </div>
+        </fieldset>
+
+        <fieldset>
+<legend>
+        Datos dentro de la plataforma
+</legend>
+
+        <div>
+       <label >
+      Ingrese su nombre de Usuario
+        <input type="text" placeholder="username" required>
+      </label>
+        </div>
+        <div>
+              <label>
+             Ingrese su contraseña 
+            <input type="password"name="password" placeholder="contraseña" required> 
+           </label>
+         
+        </div>
+
+        </fieldset>
+   
+<fieldset>
+        <Legend>Pasatiempos</Legend>
+       <label>Música
+               <input type="checkbox">
+
+       </label>
+       <label>Deporte
+                <input type="checkbox">
+        </label>
+        <label>Cine
+                <input type="checkbox">
+        </label>
+</fieldset>
+
+<fieldset>
+        <legend>Género</legend>
+        <label >Masculino
+                <input type="radio" name="Gender" required>
+        </label>
+        <label >Femenino
+                <input type="radio" name="Gender" required>
+        </label>
+</fieldset>
+<fieldset>
+        <legend>
+                Select y opciones
+        </legend>
+        <label for="country">Escoje tu país</label>
+        
+        <select name="country" id="country">
+        <optgroup label=América>
+                <option value="México">México</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Colombia">Colombia</option>
+        </optgroup>
+    
+                <optgroup label="Europa">
+                <option value="España">España</option>
+               <option value="Inglaterra">Inglaterra</option>
+               <option value="Italia">Italia</option>
+                 </optgroup>
+        </select>   
+        <div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                        </div>
+      
+
+</fieldset>
+
+<input type="submit" value="Iniciar sesión">
+
+</form>
+<script>
+document.getElementById("username").addEventListener("keyup",  e => {console.log(e.target.value)})
+</script>
+</body>
+</html>
+<!--
+<div>   Sirve funciona para dar "saltos del linea" y tener un mejor control de los formularios.
+<form>  Sirve para iniciar una cantidad indefinida de formularios, donde <label> sirve para darle un titulo a los formularios.
+<label> Sirve para etiquetar el contenido del formulario y así poder saber su contenido.
+<input> Sirve para que el usuario pueda introducir algun datos o información.
+<input type ="Submit" value="Enviar">
+<input type=""> El type sirve para tratar de normalizar la información, donde hay varios tipos como: text, number, password, date, etc.
+<input type="" placeholder=""> El placeholder sirve para darle alguna referencia al usuario del tipo de información que debe de introducir o escribir.
+<fieldset>      Sirve para catalogar un número "N" de formularios
+ <legend>       Sirve para darle un titulo a <fieldset>
+  
+
+
+
+
+-->
